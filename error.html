@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Not Found</title>
+    <link rel="stylesheet" href="./Resources/style.css">
+    <!-- <link rel="stylesheet" href="./Resources/contact.css"> -->
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- css bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- animaton link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- favicon link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon end of link -->
+  </head>
+  <body style="background-color:rgb(250,240,230);" onload="preLoad()">
+    <!-- loader start -->
+    <div class="row">
+      <div class="col-12">
+          <div id="loading"></div>
+      </div>
+    </div>
+    <!-- preloading end -->
+    <!-- navbar begin -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: black"
+    >
+      <div class="container-fluid">
+        <img src="./Images/Logo.jpg" class="img-fluid logo" width="5%" />
+        <a class="navbar-brand" href="#"
+        ><span style="color: red">आ</span>म्ही 
+        <span style="color: red">N</span>ashikkar</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tourist Place
+              </a>
+              <ul class="dropdown-menu">
+                
+                <li><a class="dropdown-item" href="./shoppingmall.html">Shopping-Mall</a></li>
+                <li><a class="dropdown-item" href="./religious.html">Religious-Place</a></li>
+                <li><a class="dropdown-item" href="./waterpark.html">WaterPark</a></li>
+                <li><a class="dropdown-item" href="./localmarket.html">LocalMarket</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Hotels
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./5starhotel.html">5-Star</a></li>
+                <li><a class="dropdown-item" href="./4starhotel.html">4-Star</a></li>
+                
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search your place"
+              aria-label="Search" id="input-text"
+            />
+            <button class="btn btn-outline-light" type="button" onclick="searchContext()">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <div class="container-fluid mt-5 pt-5">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-4">
+                <img src="./Images/errorimg.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-4" style="margin-top:10vh;">
+                <h1 style="color:rgb(95, 95, 240);">Oops!</h1>
+                <h3>Searched cannot be found</h3>
+                <h5>We're working on it and will fixed it as soon as possible<br>You can go back to our <a href="./index.html" style="text-decoration:none;">home page</a></h5>
+            </div>
+        </div>
+    <!-- end of container-fluid -->
+    </div>
+    <script src="./app.js"></script>
+    <!-- js bootstrap part -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- aos js  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

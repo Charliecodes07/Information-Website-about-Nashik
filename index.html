@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>आम्ही नाशिककर - A Tourist Guide</title>
+    <link rel="stylesheet" href="./Resources/style.css" />
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- css link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- animaton link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- favicon link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon end of link -->
+  </head>
+  <body onload="preLoad()">
+    <div class="row">
+      <div class="col-12">
+          <div id="loading"></div>
+      </div>
+    </div>
+    <!-- navbar begin -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: black"
+    >
+      <div class="container-fluid">
+        <img src="./Images/Logo.jpg" class="img-fluid logo" width="5%" />
+        <a class="navbar-brand" href="#"
+        ><span style="color: red">आ</span>म्ही 
+        <span style="color: red">N</span>ashikkar</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tourist Place
+              </a>
+              <ul class="dropdown-menu">
+                
+                <li><a class="dropdown-item" href="./shoppingmall.html">Shopping-Mall</a></li>
+                <li><a class="dropdown-item" href="./religious.html">Religious-Place</a></li>
+                <li><a class="dropdown-item" href="./waterpark.html">WaterPark</a></li>
+                <li><a class="dropdown-item" href="./localmarket.html">LocalMarket</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Hotels
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./5starhotel.html">5-Star</a></li>
+                <li><a class="dropdown-item" href="./4starhotel.html">4-Star</a></li>
+               
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search your place"
+              aria-label="Search" id="input-text"
+            />
+            <button class="btn btn-outline-light" type="button" onclick="searchContext()">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 header" style="position: relative">
+          <div class="row">
+            <div
+              class="col-8 text-white text-center font-inside-head"
+              style="position: absolute; top: 20%; left: 17%" data-aos="fade-up" data-aos-duration="2000"
+            >
+              <h2 class="static-txt" style="margin-right: 0; padding-right: 0"> 
+                <big style="color: #8a2e03">Nashik</big> 
+                <span style="color: #000000">- Ye are the light of the world. A city that is set on a hill cannot be hid.</span>  
+                <span style="color: #c77203">  </span> 
+              </h2>
+              <hr />
+              <h4 style="text-transform: uppercase" class="static-txt">
+                <span
+                  style="color: rgb(0, 0, 0);"
+               >But a city is more than a place in space, it is a drama in time night</span>
+                <span
+                  style="color: #ffdbac;
+                  "
+                  ></span
+                >
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end of header part -->
+
+      <!-- begin of history part -->
+      <div
+        class="row justify-content-evenly text-white bg-dark text-center pt-3"
+      >
+        <div class="col-lg-11" data-aos="fade-up" data-aos-duration="2000">
+          <h1 class="history-head">History of <span
+            style="color: #ffdbac;
+            "
+            >Nashik</span
+          ></h1>
+          <hr />
+        </div>
+      </div>
+      <div
+        class="row justify-content-evenly text-white bg-dark text-center pt-3"
+      >
+        <div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
+          <img
+            src="./Images/1his.jpg"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-lg-6  down-content-para" style="text-align: justify" data-aos="fade-up" data-aos-duration="2000">
+          <p>
+            Nashik is a historically, mythologically, socially and culturally important city in the northern part of the state of Maharashtra in India. It is known for the temples on the banks of the Godavari and it has historically been one of the holy sites of the Hindu religion. It is one of the four cities that hosts the massive Sinhastha Kumbh Mela once every twelve years.
+            Nashik was known by many names. It was known as "Padmanagar" during the Satya Yuga, "Trikantak" during the Treta Yuga, "Janasthana" during the Dvapara Yuga, and finally "Navashikh" or "Nashik" during the Kali Yuga, according to Hindu traditions.
+          </p>
+        </div>
+      </div>
+      <!-- end of history part -->
+      <!-- heart of Mumbai begin -->
+      <div
+        class="row justify-content-evenly text-white bg-dark text-center pt-3" 
+      >
+        <div class="col-lg-11" data-aos="fade-up" data-aos-duration="2000">
+          <h1 class="history-head">Nashik -
+            <span style="color: rgb(245, 217, 58)">Sula Vineyards</span>
+          </h1>
+          <hr />
+        </div>
+      </div>
+      <div
+        class="row justify-content-evenly text-white bg-dark text-center pt-3"
+      >
+        <div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
+          <img
+            src="Images/2bb.jpg"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-lg-6  down-content-para" style="text-align: justify" data-aos="fade-up" data-aos-duration="2000">
+          <p>
+            Sula Vineyards is a winery and vineyard located in the Nashik region of western India, 180 km northeast of Mumbai. It was founded by Rajeev Samant in 1999. Sula has grown to be India’s largest and most awarded wine brand
+            The region of Nashik is definitely steeped in agriculture, which is why grapes — both table and wine — grow so well there. It is hilly with cool night temperatures and a well-drained soil, all ideal for grape growing. But it’s a vast region spread over 15,000sq km, which is not all cultivated with grapevines. So while driving, you might see a few acres of lush vineyard, then sugarcane followed by tomatoes, then fields of green veggies, a tiny village and back to vineyards and so on. When visiting, it would be best to pace yourself, since distances between wineries, caves and whatever else you may like to see, can be longer than you think. Twenty-five kilometres on a map may take you an hour on Nashik’s less-than-perfect roads.
+            Having said that, Nashik has been established as the wine capital of the country but as I discovered recently, it has a lot to offer beyond wine.
+          </p>
+        </div>
+      </div>
+      <!-- heart of mumbai end -->
+      <!-- begin of education -->
+      <div
+        class="row justify-content-evenly text-white bg-dark text-center pt-3"
+      >
+        <div class="col-lg-11" data-aos="fade-up" data-aos-duration="2000">
+          <h1 class="history-head">Nashik - 
+            <span style="color: rgb(245, 217, 58)">Misal Pav</span></h1>
+          <hr />
+        </div>
+      </div>
+      <div
+        class="row justify-content-evenly text-white bg-dark text-center pt-3"
+      >
+        <div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
+          <img
+            src="Images/food.jpg"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-lg-6 down-content-para" style="text-align: justify" data-aos="fade-up" data-aos-duration="2000">
+          <p>
+            Misal pav is loved and had by everyone in Maharashtra where Nashik is known for its unique Misal Pav dishes. There are different varieties of Misal pav like Kolhapuri Misal, Nashik Misal, Puneri Misal, Khandeshi Misal and Nagpuri Misal among which the Nashik Misal is most trendy one so far. Nashik is every so often starred as the Misal capital.
+            It consists of Misal (a Spicy curry usually made of sprouted moth beans) and Pav. The final dish is topped with ‘Farson’ or ‘Shev’, onion, lemon and coriander. This piquant and mouthwatering breakfast dish is habitually served with buttermilk or curd and papad.
+            In a quest to savor the finest Misal Pav dishes ever.
+          </p>
+        </div>
+      </div>
+      <!-- end of education system -->
+      <!-- start of place of attraction -->
+      <div class="row justify-content-evenly text-center pt-3">
+        <div class="col-lg-11" data-aos="zoom-in" data-aos-duration="2000">
+          <h1 class="history-head">Places to visit in Nashik</h1>
+          <hr>
+        </div>
+        <div class="col-md-3 places-animate" style="position:relative"><img src="Images/1b.jpg" class="img-fluid h-100 image-placesss" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="row text-white" style="position:absolute;bottom:0; left:7%; background-color:black; padding-bottom:0; opacity:0.7;border-radius:16px;" data-aos="zoom-in" data-aos-duration="2000">
+          <div class="col"><h5 style="padding-top:10px;">Ramkund</h5></div>
+        </div>
+       </div>
+        <div class="col-md-3 imageplace places-animate" style="position:relative"><img src="Images/p2.jpg" class="img-fluid h-100 image-placesss" data-aos="zoom-in" data-aos-duration="2000">
+          <div class="row text-white" style="position:absolute;bottom:0; left:7%; background-color:black; padding-bottom:0; opacity:0.7;border-radius:16px;" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="col"><h5 style="padding-top:10px;">Pandav Leni Caves</h5></div>
+          </div>
+        </div>
+        <div class="col-md-3 imageplace places-animate" style="position:relative"><img src="Images/p3.jpg" class="img-fluid h-100 image-placesss" data-aos="zoom-in" data-aos-duration="2000">
+          <div class="row text-white" style="position:absolute;bottom:0; left:7%; background-color:black; padding-bottom:0; opacity:0.7;border-radius:16px;" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="col"><h5 style="padding-top:10px;">Sula Vineyards</h5></div>
+          </div>
+        </div>  
+      </div>
+      <!-- end of place attraction -->
+
+      <!-- Part2 place  -->
+      <div class="row justify-content-evenly text-center pt-3">
+      <div class="col-md-3 places-animate" style="position:relative"><img src="Images/p4.jpg" class="img-fluid h-100 image-placesss" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="row text-white" style="position:absolute;bottom:0; left:7%; background-color:black; padding-bottom:0; opacity:0.7;border-radius:16px;" data-aos="zoom-in" data-aos-duration="2000">
+          <div class="col"><h5 style="padding-top:10px;">Trimbakeshwar</h5></div>
+        </div>
+       </div>
+        <div class="col-md-3 imageplace places-animate" style="position:relative"><img src="Images/p5.jpg" class="img-fluid h-100 image-placesss" data-aos="zoom-in" data-aos-duration="2000">
+          <div class="row text-white" style="position:absolute;bottom:0; left:7%; background-color:black; padding-bottom:0; opacity:0.7;border-radius:16px;" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="col"><h5 style="padding-top:10px;">Anjaneri Hills</h5></div>
+          </div>
+        </div>
+        <div class="col-md-3 imageplace places-animate" style="position:relative"><img src="Images/p7.jpg" class="img-fluid h-100 image-placesss" data-aos="zoom-in" data-aos-duration="2000">
+          <div class="row text-white" style="position:absolute;bottom:0; left:7%; background-color:black; padding-bottom:0; opacity:0.7;border-radius:16px;" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="col"><h5 style="padding-top:10px;">Dugarwadi Waterfall</h5></div>
+          </div>
+        </div>  
+      </div>
+      <!-- end -->
+      <!-- start of 3rd session -->
+      <div class="row justify-content-evenly text-center pt-3 pb-2">
+        <div class="col-md-3 places-animate" style="position:relative"><img src="Images/p6.jpg" class="img-fluid h-100 image-placesss" data-aos="zoom-in" data-aos-duration="2000">
+          <div class="row text-white" style="position:absolute;bottom:0; left:7%; background-color:black; padding-bottom:0; opacity:0.7;border-radius:16px;" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="col"><h5 style="padding-top:10px;">Harihar Fort</h5></div>
+          </div>
+         </div>
+          <div class="col-md-3 imageplace places-animate" style="position:relative"><img src="Images/p8.jpg" class="img-fluid h-100 image-placesss" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="row text-white" style="bottom:0; left:7%; background-color:black; padding-bottom:0; opacity:0.7;border-radius:16px;position: absolute;" data-aos="zoom-in" data-aos-duration="2000">
+              <div class="col"><h5 style="padding-top:10px;">Sita Gumpha</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 imageplace places-animate" style="position:relative"><img src="Images/p9.jpg" class="img-fluid h-100 image-placesss" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="row text-white" style="position:absolute;bottom:0; left:7%; background-color:black; padding-bottom:0; opacity:0.7;bottom:0; left:7%; background-color:black; padding-bottom:0; opacity:0.7;border-radius:16px;" data-aos="zoom-in" data-aos-duration="2000">
+              <div class="col"><h5 style="padding-top:10px;">Swaminarayan Mandir</h5></div>
+            </div>
+          </div>  
+        </div>
+        <!-- end -->
+      <!-- end -->
+      
+<!-- start of footer -->
+<div class="row bg-dark text-white pt-3 history-head justify-content-evenly mt-3" style="text-align:justify;">
+  <div class="col-sm-3" data-aos="fade-up" data-aos-duration="2000">
+    <h4><span style="color:rgb(253, 44, 7)">Aa</span>mhi-<span style="color:rgb(253, 44, 7)">N</span>ashikkar</h4>
+    <p>आम्ही नाशिककर is tourist guide and accomodation recommendation website that help the tourists with best place to visit in nashik and hotel to stay in best place.</p>
+    <h4>
+      <a href="https://www.facebook.com/"><i class="bi bi-facebook m-2 bi-home"></i></a>
+      <a href="https://www.instagram.com/"><i class="bi bi-instagram m-2 bi-home"></i></a>
+      <i class="bi bi-twitter m-2 bi-home"></i>
+      <i class="bi bi-pinterest m-2 bi-home"></i>
+    </h4>
+  </div>
+  <div class="col-sm-2" data-aos="fade-up" data-aos-duration="2000">
+    <h4>Information</h4>
+    <p>Career<br>Case Studies<br>Trust & Safety<br>Business<br>Social Impact<br>Equity & Diversity<br>Logo & Guideline</p>
+  </div>
+  <div class="col-sm-2" data-aos="fade-up" data-aos-duration="2000">
+    <h4>Navigation</h4>
+    <p>Home<br>About Us<br>Tourist Place<br>Hotels<br>WaterPark<br>Contact Us<br>Features</p>
+  </div>
+  <div class="col-sm-3" data-aos="fade-up" data-aos-duration="2000">
+    <h4>Request A Quote</h4>
+    <form>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name">
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email">
+      </div>
+      <div class="mb-2">
+        <textarea class="w-100 p-1" style="height:10vh;border-radius:10px;" placeholder="Write your Message"></textarea>
+      </div>
+      <div class="mb-3">
+        <button type="submit w-100" class="btn" style="background-color:rgb(253, 44, 7);color:white">Send Message</button>
+      </div>
+    </form>
+  </div>
+  
+</div>
+<div class="row justify-content-center text-center bg-dark text-white">
+  <div class="col-sm-8"><p>Copyright <i class="bi bi-c-circle bi-home"></i> <span style="color:rgb(253, 44, 7)"> Aamhi-Nashikkar</span> 2022 . All right reserved.<br>Made with <i class="bi bi-heart bi-home"></i> by <span style="color:rgb(253, 44, 7)">Aditya Bairagi , Gaurav Arsule </span></p></div>
+</div>
+<!-- end of footer -->
+
+      <!-- end of container-fluid -->
+    </div>
+    <script src="./app.js"></script>
+    <!-- js part -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos js  -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+</html>

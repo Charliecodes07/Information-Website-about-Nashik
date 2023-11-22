@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>आम्ही नाशिककर - Shopping-Mall</title>
+    <link rel="stylesheet" href="./Resources/style.css">
+    <link rel="stylesheet" href="./Resources/shoppingmall.css">
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- css bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- animaton link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- favicon link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon end of link -->
+  </head>
+  <body onload="preLoad()">
+    <!-- loader start -->
+    <div class="row">
+      <div class="col-12">
+          <div id="loading"></div>
+      </div>
+    </div>
+    <!-- preloading end -->
+    <!-- navbar begin -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: black"
+    >
+      <div class="container-fluid">
+        <img src="./Images/Logo.jpg" class="img-fluid logo" width="5%" />
+        <a class="navbar-brand" href="#"
+        ><span style="color: red">आ</span>म्ही 
+        <span style="color: red">N</span>ashikkar</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tourist Place
+              </a>
+              <ul class="dropdown-menu">
+                
+                <li><a class="dropdown-item" href="#">Shopping-Mall</a></li>
+                <li><a class="dropdown-item" href="./religious.html">Religious-Place</a></li>
+                <li><a class="dropdown-item" href="./waterpark.html">WaterPark</a></li>
+                <li><a class="dropdown-item" href="./localmarket.html">LocalMarket</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Hotels
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./5starhotel.html">5-Star</a></li>
+                <li><a class="dropdown-item" href="./4starhotel.html">4-Star</a></li>
+                
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search your place"
+              aria-label="Search" id="input-text"
+            />
+            <button class="btn btn-outline-light" type="button" onclick="searchContext()">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- start of container-fluid -->
+    <div class="container-fluid mt-5 pt-2 text-container">
+        <!-- header start -->
+        <div class="row row-head justify-content-center text-center">
+            <div class="col-md-8 col-sm-12 text-white tagline-headimage" style="text-shadow:3px 3px 5px black;" data-aos="fade-up" data-aos-duration="2000">
+                <h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;letter-spacing: 2px;">CHANGING THE WAY OF LIFESTYLE</h1>
+                <h5>SHOPPING WITH SOME THRILL IS NEVER A BAD IDEA</h5>
+            </div>
+        </div>
+        <!-- header-end -->
+        <!-- start of list of place head -->
+             <div class="row justify-content-center mt-3">
+                <div class="col-md-11 text-center" data-aos="fade-up" data-aos-duration="2000">
+                    <h1 style="font-weight:800;">Sh<span style="border-bottom:3px solid rgb(253, 3, 3)">opping - Ma</span>ll</h1>
+                    <h5 class="mt-2"> While the local and traditional markets have held their own till day, Nashik has also, over the years, built a reputation for being one of the most modern Indian cities, a hub of fashion and style and the launching pad of everything international and global. It is cities to bring in the concept of shopping malls and living up to this image, it has some of the best ones in the india.</h5>
+                </div>
+             </div>
+        <!-- end of list of place -->
+        <!-- start of list of place -->
+        <div class="row justify-content-evenly mt-3">
+            <div class="col-lg-5 " style="align-items: center;" data-aos="fade-up" data-aos-duration="2000">
+                <img src="Images/mall.jpg" class="img-fluid border image-places">
+            </div>
+            <div class="col-lg-5 text-center first-place" data-aos="fade-up" data-aos-duration="2000">
+                <h2 data-aos="fade-up" data-aos-duration="2000">City Centre mall</h2>
+                <h5 data-aos="fade-up" data-aos-duration="2000"><span style="font-weight:700;">Detail:</span> City Centre mall in Nashik is the biggest shopping mall in the city. CCM is established by the Sarda Group along with its partners "Yatra Capital". The Nashik City Centre is a great mall with a good layout that gives a sense of space and flow. There are plenty of shopping options from budget-friendly to premium brands. Easy access and parking. The food court has a good variety to choose from</h5>
+                <h5 data-aos="fade-up" data-aos-duration="2000"><span style="font-weight:700;">Highlight:</span> Luxury Fashion Brands</h5>
+                <h5 class="mt-4 justify-content-evenly text-center" data-aos="fade-up" data-aos-duration="2000"><i class="bi bi-clock"></i> 10:00 AM to 10:00 PM<br><a href="https://www.google.co.in/maps/place/PALLADIUM+MALL,+462,+Senapati+Bapat+Marg,+Lower+Parel,+Mumbai,+Maharashtra+400013/@18.9946595,72.8233282,18z/data=!3m1!4b1!4m5!3m4!1s0x3be7ce8c6043c51b:0x3eb5f7ac994c8942!8m2!3d18.9949051!4d72.8245914" style="text-decoration:none;color:black;" target="_blank"><i class="bi bi-geo-alt"></i>Untwadi Rd ,Nashik</a></h5>
+            </div>
+        </div>
+
+        <div class="row justify-content-evenly mt-3">
+            <div class="col-lg-5" style="align-items: center;" data-aos="fade-up" data-aos-duration="2000">
+                <img src="Images/mall2.jpg" class="img-fluid border image-places">
+            </div>
+            <div class="col-lg-5 text-center " data-aos="fade-up" data-aos-duration="2000">
+                <h2 data-aos="fade-up" data-aos-duration="2000">Pinnacle Mall</h2>
+                <h5 data-aos="fade-up" data-aos-duration="2000"><span style="font-weight:700;">Detail:</span> Pinnacle mall is one of the top malls in Nasik. Variety of shops to visit for. Haircut, gaming section, Brand factory and Grocery Store, Reliance Smart Store, Jewelery and Perfumes. Mall is located at very central location of the city. Lot's of small fast food vendors are also present here. Do visit for casual shopping and fun centre to have fun!! Easy to locate in the centre of the city</h5>
+                <h5 data-aos="fade-up" data-aos-duration="2000"><span style="font-weight:700;">Highlight:</span>Reliance Smart Store , gaming</h5>
+                <h5 class="mt-4 justify-content-evenly text-center" data-aos="fade-up" data-aos-duration="2000"><i class="bi bi-clock"></i> 11:00 AM to 10:00 PM<br><a href="https://www.google.com/maps/place/Pinnacle+Mall/@19.9968655,73.7790649,17z/data=!3m1!4b1!4m6!3m5!1s0x3bddeb08ec30d153:0xb53bd3751f3d5c86!8m2!3d19.9968655!4d73.7812536!16s%2Fm%2F05zjxmt?hl=en-GB" style="text-decoration:none;color:black;" target="_blank"><i class="bi bi-geo-alt"></i>Shopping Mall in Mohan Nagar</a></h5>
+                
+            </div>
+        </div>
+
+      
+        <!-- end of list of place -->
+
+     
+    <!-- start of footer -->
+    <div class="row bg-dark text-white pt-3 history-head justify-content-evenly mt-3" style="text-align:justify;">
+      <div class="col-sm-3" data-aos="fade-up" data-aos-duration="2000">
+        <h4><span style="color:rgb(253, 44, 7)">Aa</span>mhi-<span style="color:rgb(253, 44, 7)">N</span>ashikkar</h4>
+        <p>आम्ही नाशिककर is tourist guide and accomodation recommendation website that help the tourists with best place to visit in nashik and hotel to stay in best place.</p>
+        <h4>
+          <a href="https://www.facebook.com/"><i class="bi bi-facebook m-2 bi-home"></i></a>
+          <a href="https://www.instagram.com/"><i class="bi bi-instagram m-2 bi-home"></i></a>
+          <i class="bi bi-twitter m-2 bi-home"></i>
+          <i class="bi bi-pinterest m-2 bi-home"></i>
+        </h4>
+      </div>
+      <div class="col-sm-2" data-aos="fade-up" data-aos-duration="2000">
+        <h4>Information</h4>
+        <p>Career<br>Case Studies<br>Trust & Safety<br>Business<br>Social Impact<br>Equity & Diversity<br>Logo & Guideline</p>
+      </div>
+      <div class="col-sm-2" data-aos="fade-up" data-aos-duration="2000">
+        <h4>Navigation</h4>
+        <p>Home<br>About Us<br>Tourist Place<br>Hotels<br>WaterPark<br>Contact Us<br>Features</p>
+      </div>
+      <div class="col-sm-3" data-aos="fade-up" data-aos-duration="2000">
+        <h4>Request A Quote</h4>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email">
+          </div>
+          <div class="mb-2">
+            <textarea class="w-100 p-1" style="height:10vh;border-radius:10px;" placeholder="Write your Message"></textarea>
+          </div>
+          <div class="mb-3">
+            <button type="submit w-100" class="btn" style="background-color:rgb(253, 44, 7);color:white">Send Message</button>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+    <div class="row justify-content-center text-center bg-dark text-white">
+      <div class="col-sm-8"><p>Copyright <i class="bi bi-c-circle bi-home"></i> <span style="color:rgb(253, 44, 7)"> Aamhi-Nashikkar</span> 2022 . All right reserved.<br>Made with <i class="bi bi-heart bi-home"></i> by <span style="color:rgb(253, 44, 7)">Aditya Bairagi , Gaurav Arsule </span></p></div>
+    </div>
+      <!-- end of footer -->
+    <!-- end of container-fluid -->
+    </div>
+    <script src="./app.js"></script>
+    <!-- js bootstrap part -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- aos js  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

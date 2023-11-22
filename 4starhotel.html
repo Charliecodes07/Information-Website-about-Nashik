@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>आम्ही नाशिककर - Hotel</title>
+    <link rel="stylesheet" href="./Resources/style.css">
+    <link rel="stylesheet" href="./Resources/5starhotel.css">
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- css bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- animaton link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- favicon link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon end of link -->
+  </head>
+  <body onload="preLoad()">
+    <!-- loader start -->
+    <div class="row">
+      <div class="col-12">
+          <div id="loading"></div>
+      </div>
+    </div>
+    <!-- preloading end -->
+    <!-- navbar begin -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: black"
+    >
+      <div class="container-fluid">
+        <img src="./Images/Logo.jpg" class="img-fluid logo" width="5%" />
+        <a class="navbar-brand" href="#"
+        ><span style="color: red">आ</span>म्ही 
+        <span style="color: red">N</span>ashikkar</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle "
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tourist Place
+              </a>
+              <ul class="dropdown-menu">
+                
+                <li><a class="dropdown-item" href="./shoppingmall.html">Shopping-Mall</a></li>
+                <li><a class="dropdown-item" href="./religious.html">Religious-Place</a></li>
+                <li><a class="dropdown-item" href="./waterpark.html">WaterPark</a></li>
+                <li><a class="dropdown-item" href="./localmarket.html">LocalMarket</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Hotels
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="5starhotel.html">5-Star</a></li>
+                <li><a class="dropdown-item" href="#">4-Star</a></li>
+                
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search your place"
+              aria-label="Search" id="input-text"
+            />
+            <button class="btn btn-outline-light" type="button" onclick="searchContext()">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- start of container-fluid -->
+    <div class="container-fluid mt-5 pt-2 text-container">
+        <!-- header start -->
+        <div class="row row-head justify-content-center text-center">
+            <div class="col-md-8 col-sm-12 tagline-headimage" style="color:rgb(250, 248, 248);text-shadow:5px 5px 3px black;" data-aos="fade-up" data-aos-duration="2000">
+                <h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;letter-spacing: 2px;">Hotel-Your Next home</h1>
+                <h4>Welcome-Sit-Relax-Enjoy</h4>
+            </div>
+        </div>
+        <!-- header-end -->
+        <!-- start of list of place head -->
+             <div class="row justify-content-center mt-3">
+                <div class="col-md-11 text-center" data-aos="fade-up" data-aos-duration="2000">
+                    <h1>To<span style="border-bottom:3px solid rgb(236, 195, 141)">p 4 Star Hotels in Mumb</span>ai</h1>
+                    <h5>In today's chaotic urban lifestyle, when everyone is craving relaxation, there is no better place to be in than the luxurious hotels in Mumbai. And what's there not to like about a day full of entertainment, relaxation and joy.</h5>
+                </div>
+             </div>
+        <!-- end of list of place -->
+        <!-- start of list of place -->
+        <div class="row justify-content-evenly mt-3">
+            <div class="col-lg-5" style="align-items: center;" data-aos="fade-up" data-aos-duration="2000">
+                <img src="Images/1hotel4.jpg" class="img-fluid border image-places">
+            </div>
+            <div class="col-lg-5 text-center" data-aos="fade-up" data-aos-duration="2000">
+                <h2>The Source at Sula</h2>
+                <h5><span style="font-weight:700;">Hotel Overview : </span>The overall experience is fantastic. Right from check in there is dedicated person to help you with all your request. The rooms are european style with minimum furniture & well maintained. There are multiple food options with 3 to 4 different restaurants. You can enjoy a swim at the pool & also jacuzzi is available next to the pool. Enjoy the nature around, cycle if u are interested. Take a tour of the vine factory followed by vine tasting. Enjoy live music & barbeque at the pool side in evening.</h5>
+                <h5 class="mt-4 justify-content-evenly text-center" data-aos="flip-up" data-aos-duration="2000"><a href="https://www.google.com/maps/place/The+Source+at+Sula/@20.0063167,73.6868921,18z/data=!4m9!3m8!1s0x3bddedba9bdb2f95:0x418eb1cf59cf189!5m2!4m1!1i2!8m2!3d20.0055475!4d73.6883709!16s%2Fg%2F11g8b5mp2f" style="text-decoration:none;color:black;" target="_blank"><i class="bi bi-geo-alt"></i>Gangavhare ,Nashik</a></h5>
+                <a href="https://staahmax.staah.net/be/indexpackdetail?propertyId=MzY0OQ==&individual=true" target="_blank"><button type="button" class="btn btn-outline-dark" data-aos="flip-up" data-aos-duration="2000">Check availability</button></a>
+
+            </div>
+        </div>
+
+        <div class="row justify-content-evenly mt-3">
+            <div class="col-lg-5" style="align-items: center;" data-aos="fade-up" data-aos-duration="2000">
+                <img src="Images/2hotel4.jpg" class="img-fluid border image-places">
+            </div>
+            <div class="col-lg-5 text-center" data-aos="fade-up" data-aos-duration="2000">
+                <h2>Grape County Eco Resort & Spa, Nashik</h2>
+                <h5><span style="font-weight:700;">Hotel Overview:</span>Set in 49 hectares of land and next to protected forest, this relaxed ecolodge across from NH848 national highway is 10 km from the Brahmagiri mountains and 3 km from the Coin Museum. Low-key rooms and permanent tents offer air-conditioning, flat-screens and safes, along with minibars, tea and coffeemaking facilities, and balconies or patios. Upgraded rooms with wood-panelled ceilings add lounge areas. Hilltop 2-bedroom, glass-enclosed villas feature terraces and forest views.
+                Amenities include a casual restaurant featuring bike-themed decor and an outdoor terrace. There's also an amphitheatre and a nature park. Outdoor activities are offered.</h5>
+                <h5 class="mt-4 justify-content-evenly text-center" data-aos="flip-up" data-aos-duration="2000"><a href="https://www.google.com/maps/place/Grape+County+Eco+Resort+%26+Spa,+Nashik/@19.9599031,73.6118933,17z/data=!3m1!4b1!4m9!3m8!1s0x3bddf2dd8f3ceb6d:0x26175aeed4855a3b!5m2!4m1!1i2!8m2!3d19.9599031!4d73.614082!16s%2Fg%2F11b6glw1g7" style="text-decoration:none;color:black;" target="_blank"><i class="bi bi-geo-alt"></i> Anjaneri, Trimbakeshwar Road Nashik</a></h5>
+                <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=20160625204330518&_uCurrency=INR&checkin=04092023&checkout=04102023&city=CTISK&cmp=SEO&country=IN&filterData=STAR_RATING%7C4&lat=19.95992&lng=73.6141&locusId=CTISK&locusType=city&modifyDates=true&pwa_ssr=true&rank=2&roomStayQualifier=2e0e&searchText=Nashik&seoReq=1678832105772&viewType=PREMIUM&mtkeys=defaultMtkey" target="_blank"><button type="button" class="btn btn-outline-dark" data-aos="flip-up" data-aos-duration="2000">Check availability</button></a>
+            </div>
+        </div>
+
+        <div class="row justify-content-evenly mt-3">
+            <div class="col-lg-5" style="align-items: center;" data-aos="fade-up" data-aos-duration="2000">
+                <img src="Images/3hotel4.jpg" class="img-fluid border image-places">
+            </div>
+            <div class="col-lg-5 text-center" data-aos="fade-up" data-aos-duration="2000">
+                <h2>Suma Adventure and Resort</h2>
+                <h5><span style="font-weight:700;">Hotel Overview:</span>For all the Adventure Junkies out there, SUMA Adventure and Resort is a new destination where you can spend an adventurous and trilling day. An adventure park where you can enjoy a fun filled day with your family and friends. Located amidst majestic mountains and serene lakeside in Nasik, SUMA Adventure & Resort is a perfect getaway to visit from Mumbai and Pune. It offers multiple exciting adventure activities to give individuals as well as groups, a thrilling experience.</h5>
+                <h5 class="mt-4 justify-content-evenly text-center" data-aos="flip-up" data-aos-duration="2000"><a href="https://www.google.com/maps/place/Suma+Adventure+And+Resort/@19.9652405,73.6562576,17z/data=!3m1!4b1!4m9!3m8!1s0x3bdded5e237366d9:0x7bb28d4c706f9ba0!5m2!4m1!1i2!8m2!3d19.9652405!4d73.6584463!16s%2Fg%2F11bxc43md9" style="text-decoration:none;color:black;" target="_blank"><i class="bi bi-geo-alt"></i>Trambakeshwar Rd, Mahiravni Nashik</a></h5>
+                <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201802081555528561&_uCurrency=INR&checkin=04092023&checkout=04102023&city=CTISK&cmp=SEO&country=IN&filterData=STAR_RATING%7C4&lat=19.96565&lng=73.6585&locusId=CTISK&locusType=city&modifyDates=true&rank=3&roomStayQualifier=2e0e&searchText=Nashik&seoReq=1678832105772&viewType=PREMIUM&mtkeys=defaultMtkey" target="_blank"><button type="button" class="btn btn-outline-dark" data-aos="flip-up" data-aos-duration="2000">Check availability</button></a>
+                
+            </div>
+        </div>
+
+        <div class="row justify-content-evenly mt-3">
+            <div class="col-lg-5" style="align-items: center;" data-aos="fade-up" data-aos-duration="2000">
+                <img src="Images/4hotel4.webp" class="img-fluid border image-places">
+            </div>
+            <div class="col-lg-5 text-center" data-aos="fade-up" data-aos-duration="2000">
+                <h2>Swiss Traffalgaar Luxury Hotels</h2>
+                <h5><span style="font-weight:700;">Hotel Overview:</span>Even work will feel like a vacation at the Swiss Traffalgaar Luxury Hotels. The spa, fitness centre and a picnic area are bound to make your stay memorable. Sweat your stress away at the in-house fitness centre.Have a fun-filled time at the hotel's picnic area.
+                  For your sweet tooth, the hotel also has its own cafe that is open for 24 hours.Pamper yourself with a relaxing therapy at the spa present at the property.</h5>
+                <h5 class="mt-4 justify-content-evenly text-center" data-aos="flip-up" data-aos-duration="2000"><a href="https://www.google.com/maps/place/SWISS+TRAFFALGAAR+LUXURY+HOTELS/@19.9590694,73.7646701,16z/data=!4m19!1m12!4m11!1m3!2m2!1d73.7696053!2d19.9542187!1m6!1m2!1s0x3bddeb4acc1a9349:0xa29b5c94499dad91!2sSWISS+TRAFFALGAAR+LUXURY+HOTELS,+Dnyaneshwar+Nagar+Rd,+Pathardi+Shivar,+Dnyaneshwar+Nagar,+Pathardi+Phata,+Nashik,+Maharashtra+422009!2m2!1d73.7695737!2d19.9533926!3m5!1s0x3bddeb4acc1a9349:0xa29b5c94499dad91!8m2!3d19.9533942!4d73.7694721!16s%2Fg%2F11thmkm4x2" style="text-decoration:none;color:black;" target="_blank"><i class="bi bi-geo-alt"></i>
+                  MIDC Ambad, Nashik</a></h5>
+                <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=20070604220329135&_uCurrency=INR&checkin=04092023&checkout=04102023&city=CTISK&cmp=SEO&country=IN&filterData=STAR_RATING%7C4&lat=19.95832&lng=73.76191&locusId=CTISK&locusType=city&modifyDates=true&rank=5&roomStayQualifier=2e0e&searchText=Nashik&seoReq=1678832105772&mtkeys=defaultMtkey" target="_blank"><button type="button" class="btn btn-outline-dark" data-aos="flip-up" data-aos-duration="2000">Check availability</button></a>  
+            </div>
+        </div>
+
+        <div class="row justify-content-evenly mt-3">
+            <div class="col-lg-5" style="align-items: center;" data-aos="fade-up" data-aos-duration="2000">
+              <img src="Images/5hotel4.jpg" class="img-fluid border image-places">
+            </div>
+            <div class="col-lg-5 text-center" data-aos="fade-up" data-aos-duration="2000">
+                <h2>Beyond by Sula | Rooms & Pool</h2>
+                <h5><span style="font-weight:700;">Hotel Overview:</span>Sula vineyards has multiple stay options in nashik near the gangapur dam. We choose to stay at the beyond. It has pres-tine views of the dam backwaters and a walk way which goes near shore. The property is extremely well maintained with excellent service as compared to other resorts in the area. The price which you pay to stay here is worth it! normally big resorts have a little delayed service however here we got instant room service. Earloer we had planned to go outside for dinner however the food was the highlight and we had multiple meals here itself. We got our tastebuds filled with indian as well as continental food</h5>
+                <h5 class="mt-4 justify-content-evenly text-center" data-aos="flip-up" data-aos-duration="2000"><a href="https://www.google.com/maps/place/Beyond+By+Sula/@20.0032309,73.6505256,17z/data=!3m1!4b1!4m9!3m8!1s0x3bddf36cddb8d2d7:0x2cd28a488ce3e262!5m2!4m1!1i2!8m2!3d20.0032309!4d73.6527143!16s%2Fg%2F11qg9mhwv0" style="text-decoration:none;color:black;" target="_blank"><i class="bi bi-geo-alt"></i>Gangavhare, Nashik</a></h5>
+                <a href="https://staahmax.staah.net/be/indexpackdetail?propertyId=MzY0OA==&individual=true" target="_blank"><button type="button" class="btn btn-outline-dark" data-aos="flip-up" data-aos-duration="2000">Check availability</button></a> 
+            </div>
+        </div>
+
+        <div class="row justify-content-evenly mt-3">
+            <div class="col-lg-5" style="align-items: center;" data-aos="fade-up" data-aos-duration="2000">
+                <img src="Images/6hotel4.jpg" class="img-fluid border image-places">
+            </div>
+            <div class="col-lg-5 text-center" data-aos="fade-up" data-aos-duration="2000">
+                <h2>Kyriad Hotel Nashik by OTHPL </h2>
+                <h5><span style="font-weight:700;">Hotel Overview:</span>Set along the busy AH47 road, this informal hotel is 3 km from Pandav Leni Caves and 8 km from Shri Kalaram Sansthan Mandir Vedic Puja Spiritual Centre.The relaxed rooms and suites have Wi-Fi, minibars, and tea and coffeemaking equipment. Some include sitting areas.
+                Amenities consist of an international restaurant and a coffee shop, in addition to a gym. A breakfast buffet is available.</h5>
+                <h5 class="mt-4 justify-content-evenly text-center" data-aos="flip-up" data-aos-duration="2000"><a href="https://www.google.com/maps/place/Kyriad+Hotel+Nashik+by+OTHPL/@19.9647396,73.7671381,17z/data=!3m1!4b1!4m9!3m8!1s0x3bddeb0a5f349859:0xa9841fb36f763008!5m2!4m1!1i2!8m2!3d19.9647396!4d73.7671381!16s%2Fg%2F11h2q3f14c" style="text-decoration:none;color:black;" target="_blank"><i class="bi bi-geo-alt"></i>Rane Nagar, Mumbai-Agra National Hwy</a></h5>
+                <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201901131204471411&_uCurrency=INR&checkin=04092023&checkout=04102023&city=CTISK&cmp=SEO&country=IN&filterData=STAR_RATING%7C4&lat=19.96516&lng=73.76681&locusId=CTISK&locusType=city&modifyDates=true&rank=4&roomStayQualifier=2e0e&searchText=Nashik&seoReq=1678832105772&mtkeys=defaultMtkey" target="_blank"><button type="button" class="btn btn-outline-dark" data-aos="flip-up" data-aos-duration="2000">Check availability</button></a> 
+            </div>
+        </div>
+
+        <!-- end of list of place -->
+
+     
+    <!-- start of footer -->
+    <div class="row bg-dark text-white pt-3 history-head justify-content-evenly mt-3" style="text-align:justify;">
+      <div class="col-sm-3" data-aos="fade-up" data-aos-duration="2000">
+        <h4><span style="color:rgb(253, 44, 7)">Aa</span>mhi-<span style="color:rgb(253, 44, 7)">N</span>ashikkar</h4>
+        <p>आम्ही नाशिककर is tourist guide and accomodation recommendation website that help the tourists with best place to visit in nashik and hotel to stay in best place.</p>
+        <h4>
+          <a href="https://www.facebook.com/"><i class="bi bi-facebook m-2 bi-home"></i></a>
+          <a href="https://www.instagram.com/"><i class="bi bi-instagram m-2 bi-home"></i></a>
+          <i class="bi bi-twitter m-2 bi-home"></i>
+          <i class="bi bi-pinterest m-2 bi-home"></i>
+        </h4>
+      </div>
+      <div class="col-sm-2" data-aos="fade-up" data-aos-duration="2000">
+        <h4>Information</h4>
+        <p>Career<br>Case Studies<br>Trust & Safety<br>Business<br>Social Impact<br>Equity & Diversity<br>Logo & Guideline</p>
+      </div>
+      <div class="col-sm-2" data-aos="fade-up" data-aos-duration="2000">
+        <h4>Navigation</h4>
+        <p>Home<br>About Us<br>Tourist Place<br>Hotels<br>WaterPark<br>Contact Us<br>Features</p>
+      </div>
+      <div class="col-sm-3" data-aos="fade-up" data-aos-duration="2000">
+        <h4>Request A Quote</h4>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email">
+          </div>
+          <div class="mb-2">
+            <textarea class="w-100 p-1" style="height:10vh;border-radius:10px;" placeholder="Write your Message"></textarea>
+          </div>
+          <div class="mb-3">
+            <button type="submit w-100" class="btn" style="background-color:rgb(253, 44, 7);color:white">Send Message</button>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+    <div class="row justify-content-center text-center bg-dark text-white">
+      <div class="col-sm-8"><p>Copyright <i class="bi bi-c-circle bi-home"></i> <span style="color:rgb(253, 44, 7)"> Aamhi-Nashikkar</span> 2022 . All right reserved.<br>Made with <i class="bi bi-heart bi-home"></i> by <span style="color:rgb(253, 44, 7)">Aditya Bairagi , Gaurav Arsule </span></p></div>
+    </div>
+      <!-- end of footer -->
+    <!-- end of container-fluid -->
+    </div>
+    <script src="app.js"></script>
+    <!-- js bootstrap part -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- aos js  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
